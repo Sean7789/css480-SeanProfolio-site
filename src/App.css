@@ -176,3 +176,170 @@ li {
   color: #1f2937;
   font-size: 17px;
 }
+
+/* League of Legends attention-guided page */
+.league-page {
+  min-height: 100vh;
+  padding: 40px 20px 70px;
+  background:
+    radial-gradient(circle at top, rgba(200, 155, 60, 0.16), transparent 28%),
+    radial-gradient(circle at 10% 35%, rgba(42, 91, 119, 0.22), transparent 25%),
+    linear-gradient(180deg, #050914 0%, #09111f 45%, #030711 100%);
+  color: #e8dcc2;
+}
+
+.league-content {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* Title / Hero section */
+.league-hero {
+  text-align: center;
+  padding: 80px 28px;
+  margin-bottom: 34px;
+  border: 1px solid rgba(200, 155, 60, 0.55);
+  border-radius: 22px;
+  background:
+    linear-gradient(rgba(5, 9, 20, 0.78), rgba(5, 9, 20, 0.92)),
+    url('./assets/runeterra-map.png');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.55);
+}
+
+.league-title-icon {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 18px;
+}
+
+.league-kicker {
+  color: #c8a75d;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.league-hero h1 {
+  color: #f4e6b5;
+  font-size: 64px;
+  margin: 0 0 28px;
+  text-shadow: 0 0 20px rgba(200, 155, 60, 0.38);
+}
+
+.league-hero-text {
+  max-width: 760px;
+  margin: 0 auto 28px;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #f3ead4;
+}
+
+.league-main-link,
+.league-card a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #06101d;
+  background: linear-gradient(135deg, #f2d98b, #b88932);
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.league-main-link:hover,
+.league-card a:hover {
+  background: linear-gradient(135deg, #fff0b6, #c99b45);
+}
+
+/* League content cards */
+.league-card {
+  background: rgba(10, 19, 34, 0.88);
+  border: 1px solid rgba(200, 155, 60, 0.42);
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.36);
+}
+
+.league-card h2 {
+  color: #f2d98b;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.section-number {
+  display: none;
+}
+
+.league-card p {
+  color: #d9cfba;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+.featured-card {
+  border-width: 2px;
+}
+
+.image-right-card,
+.image-left-card {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.image-left-card {
+  grid-template-columns: 0.95fr 1.05fr;
+}
+
+.image-right-card img,
+.image-left-card img {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(200, 155, 60, 0.48);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+.esports-card img {
+  background-color: #f3efe2;
+}
+
+.aram-card {
+  background:
+    linear-gradient(135deg, rgba(10, 19, 34, 0.93), rgba(12, 44, 65, 0.9));
+}
+
+/* Mobile responsive layout */
+@media (max-width: 760px) {
+  .league-hero h1 {
+    font-size: 42px;
+  }
+
+  .league-hero-text {
+    font-size: 17px;
+  }
+
+  .league-title-icon {
+    width: 72px;
+    height: 72px;
+  }
+
+  .image-right-card,
+  .image-left-card {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+}
